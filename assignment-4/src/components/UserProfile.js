@@ -1,7 +1,7 @@
 import React, {Component} from 'react';
 import {Link} from 'react-router-dom';
 
-
+//Displays User Profile
 class UserProfile extends Component {
   render() {
     return (

@@ -13,7 +13,7 @@ class Debits extends Component {
           redirect: false
         }
       }
-
+//import and make list out of debits from API
 makeList = () => {
     const { debits } = this.props;
     return debits.map((debit) => {

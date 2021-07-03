@@ -13,7 +13,7 @@ class Credits extends Component {
           redirect: false
         }
       }
-
+//import and make list out of credits from API
 makeList = () => {
     const { credits } = this.props;
     return credits.map((credit) => {

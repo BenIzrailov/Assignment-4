@@ -32,6 +32,7 @@ import axios from 'axios';
         }
       }
 
+      //fetch api and add to credits/debits array
       componentDidMount = async () => {
 
         let linktoCred = 'https://moj-api.herokuapp.com/credits';
@@ -61,6 +62,7 @@ import axios from 'axios';
 
       // addCredit = (e)
       
+      //add components to be able to be used in respective components
       render() {
 
         const HomeComponent = () => (<Home accountBalance={this.state.accountBalance}/>);
@@ -71,6 +73,7 @@ import axios from 'axios';
         const CreditsComponent = () => (<Credits addCredit={this.addCredit} credits={this.state.credits} />)
         const DebitsComponent = () => (<Debits addDebit={this.addDebit} debits={this.state.debits} />)
 
+        //route to components
         return (
           <Router>
             <div>

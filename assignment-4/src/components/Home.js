@@ -2,7 +2,8 @@ import React, { Component } from 'react';
 import AccountBalance from './AccountBalance';
 import {Link} from 'react-router-dom';
 
-    
+    //Shows all links to respective components
+    //sets up home page
     class Home extends Component {
       render() {
         document.body.style = 'background: #90ee90;';
