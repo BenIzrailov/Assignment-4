@@ -12,7 +12,7 @@ class LogIn extends Component {
       redirect: false
     }
   }
-
+  //take in value
   handleChange = (e) => {
     const updatedUser = {...this.state.user}
     const inputField = e.target.name
@@ -21,7 +21,7 @@ class LogIn extends Component {
 
     this.setState({user: updatedUser})
   }
-
+  //login user
   handleSubmit = (e) => {
     e.preventDefault()
     this.props.mockLogIn(this.state.user)
@@ -33,6 +33,7 @@ class LogIn extends Component {
       return (<Redirect to="/userProfile"/>)
     }
 
+    //Display Login Screen
     return (
       <div>
         <form onSubmit={this.handleSubmit}>
