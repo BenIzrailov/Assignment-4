@@ -13,8 +13,9 @@ import {Link} from 'react-router-dom';
               <Link to="/Login" style = {{marginRight:"1rem"}} >
                 Login
                 </Link>
-              <Link to="/userProfile">User Profile</Link>
-
+              <Link to="/userProfile" style = {{marginRight:"1rem"}}>User Profile</Link>
+              <Link to="/Credits" style = {{marginRight:"1rem"}}>Credits</Link>
+              <Link to="/Debits" style = {{marginRight:"1rem"}}>Debits</Link>
               <AccountBalance accountBalance={this.props.accountBalance}/></center>
             </div>
         );
